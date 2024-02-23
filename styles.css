@@ -20,14 +20,50 @@ p {
     font-family: "Segoe UI", sans-serif;
 }
 
-aside {
+.aside-container {
     height: 100vh;
     width: 450px;
     background-color: red;
+
+    display: flex;
+    justify-content: center;
+    align-items: start;
 }
 
 .bg-image {
     width: 100%;
     height: 100%;
     vertical-align: middle;
+}
+
+.odin-text-container {
+    position: absolute;
+}
+
+.odin-text {
+    color: white;
+    font-size: 7rem;
+}
+
+.transparent-bg {
+    position: absolute;
+    background-color: black;
+    opacity: 0.5;
+    width: 450px;
+    height: 7rem;
+}
+
+.odin-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+}
+
+.odin-image {
+    width: 5rem;
+}
+
+.odin-image, .odin-text {
+    z-index: 1;
 }
