@@ -16,8 +16,19 @@ h1 {
     font-family: "Norse Bold", sans-serif;
 }
 
-p {
+p, input, label, h3 {
     font-family: "Segoe UI", sans-serif;
+}
+
+:root {
+    --white: #F9FAF8;
+    --dark-green: #596D48;
+    --blue: #3882F6;
+    --red: #ce3131;
+}
+
+body {
+    background-color: var(--white)
 }
 
 .aside-container {
@@ -41,7 +52,7 @@ p {
 }
 
 .odin-text {
-    color: white;
+    color: var(--white);
     font-size: 7rem;
 }
 
@@ -66,4 +77,126 @@ p {
 
 .odin-image, .odin-text {
     z-index: 1;
+}
+
+.main-container {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+
+    padding-top: 100px;
+
+    bottom: auto;
+    top: 0;
+    left: 450px;
+
+    width: calc(100vw - 450px);
+
+}
+
+.pg-1, .pg-2 {
+    font-size: 1.2rem;
+    padding-left: 2rem;
+}
+
+.pg-2 {
+    padding-top: 25px;
+    margin-bottom: 2rem;
+}
+
+.signup-form {
+    padding-left: 2rem;
+    padding-bottom: 1rem;
+    width: 100%;
+
+    box-shadow: -1px 10px 5px -7px rgba(0,0,0,0.74);
+}
+
+.header-form {
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+.form-container {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-top: 5px;
+
+    gap: 5rem;
+}
+
+.top-label {
+    display: block;
+    font-size: 0.8rem;
+}
+
+.form-column {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+input {
+    width: 13rem;
+    height: 1.5rem;
+
+    border: #E5E7EB 2px solid;
+    border-radius: 5px;
+}
+
+input:focus {
+    outline: none !important;
+    border: var(--blue) 1px solid;
+    box-shadow: 0 0 10px #719ECE;
+}
+
+.account-container {
+    padding: 2rem;
+}
+
+.signup-btn {
+    padding: 0.7em;
+    width: 185px;
+    border-radius: 10px;
+
+    font-size: 1rem;
+    font-weight: bolder;
+
+    color: var(--white);
+    background-color: var(--dark-green);
+}
+
+.signup-btn:hover {
+    cursor: pointer;
+}
+
+.login-text:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.login-text {
+    color: var(--dark-green);
+}
+
+.login-pg {
+    padding-top: 1rem;
+}
+
+.error {
+    outline: none !important;
+    border: var(--red) 1px solid;
+}
+
+.pass-nomatch {
+    display: block;
+    color: var(--red);
+    font-size: 0.8rem;
+}
+
+.hidden {
+    display: none;
 }

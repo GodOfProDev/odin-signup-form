@@ -22,7 +22,55 @@
     </div>
     <img src="assets/background.jpg" alt="Some leaves" class="bg-image">
 </aside>
-<main>
+
+<main class="main-container">
+    <div>
+        <p class="pg-1">This is not a real online service! You know you need something<br>like this in your life to help you realize your deepest dreams.<br>Sign up now to get started.</p>
+        <p class="pg-2">You know you want to.</p>
+    </div>
+    <div class="signup-form">
+        <h3 class="header-form">Let's do this!</h3>
+
+        <form id="acc-form" class="form-container" method="GET" action="index.html">
+            <div class="form-column">
+                <div>
+                    <label class="top-label" for="first_name">FIRST NAME</label>
+                    <input type="text" name="first_name" id="first_name" required minlength="3">
+                </div>
+
+               <div>
+                   <label class="top-label" for="email">EMAIL</label>
+                   <input type="email" name="email" id="email" required minlength="3">
+               </div>
+
+               <div>
+                   <label class="top-label" for="password">PASSWORD</label>
+                   <input type="password" name="password" id="password" required minlength="3">
+                   <p class="pass-nomatch hidden">* Passwords do not match</p>
+               </div>
+            </div>
+            <div class="form-column">
+                <div>
+                    <label class="top-label" for="last_name">LAST NAME</label>
+                    <input type="text" name="last_name" id="last_name" required minlength="3">
+                </div>
+
+                <div>
+                    <label class="top-label" for="phone_number">PHONE NUMBER</label>
+                    <input type="tel" name="phone_number" id="phone_number" required>
+                </div>
+
+                <div>
+                    <label class="top-label" for="confirm_password">CONFIRM PASSWORD</label>
+                    <input type="password" name="confirm_password" id="confirm_password" required minlength="3">
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="account-container">
+        <button class="signup-btn" type="submit" form="acc-form">Create Account</button>
+        <p class="login-pg">Already have an account? <span class="login-text">Log in</span></p>
+    </div>
 </main>
 
 </body>
